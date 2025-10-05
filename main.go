@@ -96,7 +96,7 @@ func probePackage(ctx context.Context, pkg string) (*AppInfo, error) {
 
 	label := ""
 	if apkPath != "" {
-		aaptOut, err := runCmdBytes(ctx, "aapt", "dump", "badging", apkPath)
+		aaptOut, err := runCmd(ctx, "aapt", "dump", "badging", apkPath)
 		if err == nil && aaptOut != "" {
 			sc := bufio.NewScanner(strings.NewReader(aaptOut))
 			for sc.Scan() {
