@@ -5,7 +5,7 @@ Reference: https://github.com/luisadha/drawercli
 ## Install
 
 ```sh
-go install github.com/luisadha/drawercli.go@v1.0.01
+go install github.com/luisadha/drawercli.go@1.0.01
 ```
 
 ## Build
